@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <link rel="stylesheet" href="style1.css">
+    <title>Hotel Booking</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hotel Booking</h1>
+    </header>
+    
+    <section class="booking-form">
+        <h2>Book a Room</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type">
+                <option value="standard">Standard</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="suite">Suite</option>
+                <header>
+                    <h1>Payment Options</h1>
+                </header>
+                
+                <section class="payment-options">
+                    <h2>Select a Payment Option</h2>
+                    <label for="online-payment">
+                        <input type="radio" id="online-payment" name="payment-method" value="online">
+                        Online Payment
+                    </label>
+                
+                    <label for="cash-on-delivery">
+                        <input type="radio" id="cash-on-delivery" name="payment-method" value="cod">
+                        Cash on Delivery
+                    </label>
+                
+                <button> <a href="booking.html">Book Now</button></a>
+
+                </section>
+                
+            </select>
+
+            
+        </form>
+    </section>
+
+    <section class="room-details">
+        <h2>Available Rooms</h2>
+        <div class="room-card">
+            <img src="room1.webp" width="800px" alt="Standard Room">
+            <h1>Standard Room</h1>
+            <p>Starting at 2000/night</p>
+        </div>
+        <div class="room-card">
+            <img src="room2.jpg" width="800px" alt="Deluxe Room">
+            <h1>Deluxe Room</h1>
+            <p>Starting at 3000/night</p>
+        </div>
+        <div class="room-card">
+            <img src="room3.jpeg" width="800px" alt="Suite">
+            <h1>Suite</h1>
+            <p>Starting at 4000/night</p>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hotel Booking</p>
+    </footer>
+</body>
+</html>
+
